@@ -64,7 +64,7 @@ let encodeOrDecode = process.argv[2];
 let cipherType = process.argv[3]; 
 let userInput = process.argv[4].trim().toLowerCase();
 let leftOrRight = process.argv[5];
-let shiftBy = parseInt(process.argv[6]);
+let shiftBy = parseInt(process.argv[6] % 26);
 let output = "";
 
 function morse() {
