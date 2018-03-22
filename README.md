@@ -1,5 +1,9 @@
-# cyphers
-Encode some strings
+# ciphers
+Write a command line app that encodes some strings.
+
+You don't have to work in order, you can choose to start with the second problem if you want.
+
+If you implement both, make the command line app take an argument for which kind of encoding you want to make.
 
 ## Morse Code
 
