@@ -1,0 +1,8 @@
+{
+  "name": "cyphers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zw-zack/cyphers.git",
+  "author": "zw-zack <zhengwin94@hotmail.com>",
+  "license": "MIT"
+}
