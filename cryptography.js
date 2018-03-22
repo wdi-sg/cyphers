@@ -61,7 +61,12 @@ function applyCaesar(translation, stringToEncode) {
         if (currentChar === ' ') {
             result += currentChar;
         } else {
-            pos = ((alphabet.indexOf(currentChar) + parseInt(translation)) % 26);
+            pos = ((alphabet.indexOf(currentChar) + parseInt(translation)));
+            if (pos > 26) {
+                pos -= 26;
+            } else if (pos < 0) {
+                pos += 26;
+            }
             result += alphabet.charAt(pos);
         };
     };
