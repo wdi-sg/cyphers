@@ -31,37 +31,46 @@ var mRef = {
 			  z: '--..'				 //Morse code reference obj
 			}
 
-if (arg[2] == "s") {    // Basic Logic for Cesar, doesnt account 
+arg.shift();
+arg.shift();
+
+if (arg[0] == "s") {    // Basic Logic for Cesar, doesnt account 
 						// for all shifts scenario yet.
 
-	var inputString = arg[4];
-	var shiftValue = parseInt(arg[3]);
+	var inputString = arg[2];
+	var shiftValue = parseInt(arg[1]);
 	var outputString = "";
 
 	for (let i=0; i<inputString.length; i++){
-
 		let charCode = inputString.charCodeAt(i);
+		if  (charCode === 32){					//Leave spaces alone
+			outputString += " ";
+		} else {
 		let newChar = String.fromCharCode(charCode+shiftValue);
 		outputString += newChar;
+		}
 	}
 
 	console.log(outputString);
 }
 
-if (arg[2] == "m") {    // MORSE CODE
-						//
+if (arg[0] == "m") {    // MORSE CODE
+						// Basic logic
 
-	var inputString = arg[3].toLowerCase();  // Just in case
+	var inputString = arg[1].toLowerCase();  // Just in case
 	var outputString = "";
 
 	for (let i=0; i<inputString.length; i++){
 		let comparatorChar = inputString.charAt(i);
-		for (let char in mRef){
-			if (char === comparatorChar){
-				outputString += mRef[char];
+		if (comparatorChar === " "){
+			outputString += " ";
+		} else {
+			for (let char in mRef){
+				if (char === comparatorChar){
+					outputString += mRef[char];
+				}
 			}
 		}
-		
 	}
 	console.log(outputString);
 }
