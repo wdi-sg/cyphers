@@ -77,3 +77,6 @@ When encrypting, a person looks up each letter of the message in the "plain" lin
 Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 ```
+
+### Further
+Write your function such that it can decode a message given to it as well.
