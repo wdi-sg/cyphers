@@ -1,9 +1,16 @@
-# ciphers
+# Ciphers
 Write a command line app that encodes some strings.
 
 You don't have to work in order, you can choose to start with the second problem if you want.
 
-If you implement both, make the command line app take an argument for which kind of encoding you want to make.
+## Instructions
+* Write your code in `script.js`, specifically in the 2 given functions.
+  - `morseDecode` should take a single parameter, the morse code as a string, and return the decoded message as a string
+  - `caesarEncode` should take two parameters, a message as a string and the number of places to shift by (positive values shift to the right, negative values shift to the left), and return the encoded message as a string
+
+* Run `npm install` in the directory. 
+
+* When you're done, run `npm test`.
 
 ## Morse Code
 

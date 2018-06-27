@@ -1,0 +1,23 @@
+{
+  "name": "cyphers",
+  "version": "1.0.0",
+  "description": "Write a command line app that encodes some strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdi-sg/cyphers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdi-sg/cyphers/issues"
+  },
+  "homepage": "https://github.com/wdi-sg/cyphers#readme",
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}
