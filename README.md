@@ -7,10 +7,8 @@ You don't have to work in order, you can choose to start with the second problem
 * Write your code in `script.js`, specifically in the 2 given functions.
   - `morseDecode` should take a single parameter, the morse code as a string, and return the decoded message as a string
   - `caesarEncode` should take two parameters, a message as a string and the number of places to shift by (positive values shift to the right, negative values shift to the left), and return the encoded message as a string
-
-* Run `npm install` in the directory. 
-
-* When you're done, run `npm test`.
+  
+* Run `node script.js YOUR_ARGUMENTS_HERE` to test your functions
 
 ## Morse Code
 
