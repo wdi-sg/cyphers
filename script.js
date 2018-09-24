@@ -11,7 +11,7 @@ function caesarEncode(input, shift) {
   return "Your result";
 }
 
-module.exports = {
-  morseDecode,
-  caesarEncode
-}
+// uncomment the relevant line
+// run node script.js ARG_ONE ARG_TWO to test your functions
+// morseDecode(process.argv[2])
+// caesarEncode(process.argv[2], process.argv[3])
